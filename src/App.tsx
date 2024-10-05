@@ -23,7 +23,7 @@ const App: React.FC = () => {
   return (
     <ApolloProvider client={client}>
       <div className="container mx-auto p-6">
-        <h1 className="text-3xl font-bold text-center mb-6">Open Collective Transactions & Donations</h1>
+        <h1 className="text-3xl font-bold text-center mb-6">Open Collective Crowdfunding Module</h1>
         <form onSubmit={handleSlugChange} className="flex flex-col md:flex-row items-center justify-center mb-8 gap-4">
           <input
             type="text"
@@ -37,7 +37,7 @@ const App: React.FC = () => {
           </button>
         </form>
         <hr/>
-        <div className="mt-8 p-4 border rounded-lg hover:shadow-lg">
+        <div className="mt-8 p-8 pb-12 border rounded-lg hover:shadow-lg bg-base-100 shadow-2xl">
         <Transactions slug={slug} />
         <div className="mt-8"/>
         <DonationWidget slug={slug} />
